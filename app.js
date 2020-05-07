@@ -32,5 +32,9 @@ app.use('/api', user_routers);
 app.use('/api', follow_routers);
 app.use('/api', publi_routers);
 app.use('/api', message_routers);
+app.get('/', function (req, res) {
+    res.send('GET request to the homepage');
+  });
+
 //export
 module.exports = app;

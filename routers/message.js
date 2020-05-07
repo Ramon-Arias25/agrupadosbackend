@@ -12,4 +12,5 @@ api.get('/outbox-messages/:page?', md_auth.ensureAuth , MessageController.getEmi
 api.get('/msgunviewed' , md_auth.ensureAuth, MessageController.getUnViewedMessages);
 api.get('/msgsetviewed' , md_auth.ensureAuth , MessageController.setViewedMessages);
 
+
 module.exports = api;
